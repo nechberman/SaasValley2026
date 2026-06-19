@@ -122,6 +122,12 @@
   .more-content li{ margin-bottom:5px; }
   .more-content .price{ font-weight:700; color:#1f5c85; }
 
+  .region.info .attraction{
+    background:#fdf8ee; border:none; border-right:4px solid #c79a4e;
+    border-radius:8px; padding:13px 16px;
+  }
+  .region.info .attraction h3{ font-size:15.5px; }
+
   footer{
     margin-top:30px; text-align:center; font-size:12px; color:#8a958f;
     line-height:1.8;
@@ -134,10 +140,9 @@
 
   <div class="main-header">
     <h1>פעילויות ואטרקציות לקיץ באזור עמק הסאס – שוויץ</h1>
-    <p class="sub">Saastal · סאס פה · סאס גרונד · סאס אלמגל · סאס באלן</p>
+    <p class="sub">סאס פה · סאס גרונד · סאס אלמגל · סאס באלן</p>
     <div class="header-links">
       <a href="https://www.saas-fee.ch/de/" target="_blank" rel="noopener">🌐 אתר סאס פה הרשמי</a>
-      <a href="https://via.admin.ch/shop/dashboard" target="_blank" rel="noopener">🛂 מדבקת כביש דיגיטלית (שוויץ)</a>
     </div>
   </div>
 
@@ -238,21 +243,6 @@
       </div>
 
       <div class="attraction">
-        <h3>מסלול הליכה מסאס-פה לסאס-אלמגל <span class="orig">דרך אגם הברבורים</span></h3>
-        <p class="desc">מסלול הליכה יפהפה ופופולרי שמחבר בין העיירות.</p>
-        <div class="btn-row">
-          <a class="btn-nav" href="https://maps.app.goo.gl/NupVeWmCjA5ZhKvv9" target="_blank" rel="noopener">🧭 ניווט לנקודת היציאה</a>
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li>מה במסלול: הולכים בתוך יער אלפיני ומגיעים בסוף המסלול אל אגם הברבורים המקסים, שנמצא ממש ממול לרכבל הפתוח (רכבל הכיסאות) של סאס-אלמגל</li>
-            <li>המשך המסלול: למי שמעוניין להאריך את הטיול, מאזור אגם הברבורים/הרכבל ניתן להמשיך ברגל במסלול הליכה קל ונוח גם לכיוון העיירה סאס-גרונד (Saas-Grund)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="attraction">
         <h3>מוקד מרכזי – מלון דירות מונטלה (Montela)</h3>
         <p class="desc">מתחם דירות פופולרי מאוד שבו מתרכזות משפחות יהודיות רבות. המתחם ערוך ומותאם בצורה יוצאת דופן לצרכי הציבור הדתי.</p>
         <div class="btn-row">
@@ -308,6 +298,7 @@
         </div>
         <div class="more-content">
           <ul>
+            <li>מדבקת כביש דיגיטלית (Vignette): לנסיעה בכבישים המהירים בשוויץ (Autobahn) נדרשת מדבקת כביש דיגיטלית בתשלום, אותה ניתן (ומומלץ) לרכוש מראש באתר הרשמי: <a href="https://via.admin.ch/shop/dashboard" target="_blank" rel="noopener">רכישת מדבקת כביש דיגיטלית</a></li>
             <li>מסוף החניה של סאס-פה (Saas-Fee Parking Terminal): מכיוון שהעיירה סאס-פה סגורה לחלוטין לכניסת כלי רכב מנועיים, למגיעים ברכב ישנו מסוף חניה ענק ומסודר בכניסה לעיירה (ממש בצד שמאל כשנכנסים)
               <ul>
                 <li>בחניון זה פורקים את המזוודות, ומשם ממשיכים לעיירה ברגל או באמצעות עגלת יד ייעודית שניתן לקחת לעיתים ממקום האירוח</li>
@@ -393,7 +384,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור: 46 פר' (מבוגר) / 23 פר' (ילד) · כיוון אחד: 30 פר'</li>
+            <li>הרכבל כלול ללא תשלום נוסף בכרטיס SaastalCard</li>
             <li>שבילי טיול קלים ונקודות תצפית פתוחות על הכפר והעמק</li>
             <li>מסעדת הרים בתחנה העליונה</li>
           </ul>
@@ -409,7 +400,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור מהכפר: 50 פר' (מבוגר) / 25 פר' (ילד) · כיוון אחד: 33 פר'</li>
+            <li>הרכבל כלול ללא תשלום נוסף בכרטיס SaastalCard</li>
             <li>תחנת מעבר נוחה להמשך הדרך ל-Längfluh</li>
           </ul>
         </div>
@@ -425,8 +416,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור מהכפר: 61 פר' (מבוגר) / 30.50 פר' (ילד)</li>
-            <li class="price">מחיר הלוך-חזור Spielboden–Längfluh בלבד: 25 פר' (מבוגר) / 12.50 פר' (ילד)</li>
+            <li>הרכבל (כולל ההמשך מ-Spielboden) כלול ללא תשלום נוסף בכרטיס SaastalCard</li>
             <li>נוף פתוח על הקרחונים – מומלץ ביגוד חם יותר מהכפר</li>
           </ul>
         </div>
@@ -441,7 +431,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור: 40 פר' (מבוגר) / 20 פר' (ילד) · כיוון אחד: 26 פר'</li>
+            <li>הרכבל כלול ללא תשלום נוסף בכרטיס SaastalCard</li>
             <li>שבילי הליכה שקטים, מתאים לטיול משפחתי רגוע</li>
           </ul>
         </div>
@@ -457,11 +447,25 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר משולב סאס פה–מיטלאלאלין הלוך-חזור: 83 פר' (מבוגר) / 41.50 פר' (ילד) · כיוון אחד: 62 פר'</li>
-            <li class="price">מחיר סאס פה–פלסקין בלבד הלוך-חזור: 55 פר' (מבוגר) / 27.50 פר' (ילד)</li>
+            <li>העלייה ברכבל Alpin Express/Felskinn כלולה ללא תשלום נוסף בכרטיס SaastalCard; ההמשך במטרו האלפיני והכניסה למערת הקרח הם בתשלום נפרד בהנחה לבעלי הכרטיס (פירוט בכרטיס ה-SaastalCard למעלה)</li>
             <li>כרטיס Metro Plus (נסיעות ללא הגבלה ב-Metro Alpin בזמן השהייה + כניסה ל-VirtuAllalin): תוספת חד-פעמית כ-50 פר' (מבוגר) – בתוקף בעיקר בשילוב SaastalCard</li>
             <li>שטח מערת הקרח כ-5,500 מ"ר – הגדולה בעולם; הטמפרטורה בפנים קרה וקבועה גם בקיץ – מומלץ ז'קט</li>
             <li>בקומה העליונה נמצאים גם מסעדת הסחרור Revolving Restaurant ומרפסות תצפית פתוחות</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>מסלול הליכה מסאס-פה לסאס-אלמגל <span class="orig">דרך אגם הברבורים</span></h3>
+        <p class="desc">מסלול הליכה יפהפה ופופולרי שמחבר בין העיירות.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="https://maps.app.goo.gl/NupVeWmCjA5ZhKvv9" target="_blank" rel="noopener">🧭 ניווט לנקודת היציאה</a>
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>מה במסלול: הולכים בתוך יער אלפיני ומגיעים בסוף המסלול אל אגם הברבורים המקסים, שנמצא ממש ממול לרכבל הפתוח (רכבל הכיסאות) של סאס-אלמגל</li>
+            <li>המשך המסלול: למי שמעוניין להאריך את הטיול, מאזור אגם הברבורים/הרכבל ניתן להמשיך ברגל במסלול הליכה קל ונוח גם לכיוון העיירה סאס-גרונד (Saas-Grund)</li>
           </ul>
         </div>
       </div>
@@ -487,7 +491,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור מסאס גרונד: 48 פר' (מבוגר) / 24 פר' (ילד) · כיוון אחד: 37 פר'</li>
+            <li>הרכבל כלול ללא תשלום נוסף במסגרת כרטיס ה-SaastalCard, וזו דרך הגעה נוחה ומהירה לאחת מהפסגות המרשימות בעמק</li>
           </ul>
         </div>
       </div>
@@ -502,8 +506,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור מסאס גרונד: 39 פר' (מבוגר) / 19.50 פר' (ילד) · כיוון אחד: 30 פר'</li>
-            <li class="price">המשך Kreuzboden–Hohsaas הלוך-חזור: 39 פר' (מבוגר)</li>
+            <li>הרכבל (וגם ההמשך להוהסאס) כלולים ללא תשלום נוסף במסגרת כרטיס ה-SaastalCard</li>
           </ul>
         </div>
       </div>
@@ -535,7 +538,7 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר השכרה (משוער): כ-19 פר' (מבוגר) / 13 פר' (ילד), בנוסף לעלות עלייה ברכבל</li>
+            <li class="price">מחיר השכרה (משוער): כ-19 פר' (מבוגר) / 13 פר' (ילד) – בנוסף לעלייה ברכבל (כלולה בכרטיס SaastalCard)</li>
             <li>כולל קסדה והדרכה קצרה בתחנה העליונה; יש להפקיד תעודה מזהה</li>
             <li>פעיל בעונת הקיץ בהתאם ללוח הרכבלים – מומלץ לאשר זמינות מול האתר הרשמי</li>
           </ul>
@@ -554,7 +557,7 @@
     <div class="region-body">
 
       <div class="attraction">
-        <h3>רכבל כיסאות ראשון <span class="orig">Furggstalden</span></h3>
+        <h3>רכבל כיסאות פתוח <span class="orig">Furggstalden</span></h3>
         <p class="desc">רכבל כיסאות פתוח מהכפר אל אזור כפרי-הררי פסטורלי ונינוח.</p>
         <div class="btn-row">
           <a class="btn-nav" href="https://www.google.com/maps/search/?api=1&query=Furggstalden%20Saas-Almagell" target="_blank" rel="noopener">🧭 ניווט</a>
@@ -562,15 +565,14 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור: 16 פר' (מבוגר) / 8 פר' (ילד) · כיוון אחד: 12 פר'</li>
-            <li>רכבל כיסאות פתוח (לא סגור/מקורה). שעות הפעולה בעונת הקיץ הן בדרך כלל כ-08:30/09:00–16:30/17:00, אך לעובדי הרכבל נהוגה לעיתים הפסקת צהריים בין השעות 12:00–13:00/13:30 לערך – מומלץ לבדוק את הלוח המדויק באותו הבוקר בקופות, כדי לא להיתקע למעלה בזמן ההפסקה</li>
+            <li>רכבל כיסאות פתוח (לא סגור/מקורה), כלול ללא תשלום נוסף בכרטיס SaastalCard. שעות הפעולה בעונת הקיץ הן בדרך כלל כ-08:30/09:00–16:30/17:00, אך לעובדי הרכבל נהוגה לעיתים הפסקת צהריים בין השעות 12:00–13:00/13:30 לערך – מומלץ לבדוק את הלוח המדויק באותו הבוקר בקופות, כדי לא להיתקע למעלה בזמן ההפסקה</li>
           </ul>
         </div>
       </div>
 
       <div class="attraction">
         <span class="badge must">🔥</span>
-        <h3>רכבל כיסאות שני <span class="orig">Heidbodme (2,344 מ')</span></h3>
+        <h3>רכבל כיסאות פתוח (המשך) <span class="orig">Heidbodme (2,344 מ')</span></h3>
         <p class="desc">מ-Furggstalden ממשיכים ברכבל כיסאות נוסף שמטפס לגובה כ-2,344 מ', עם תצפיות פתוחות ומרשימות על רכס מונטה רוזה ועל הסכר.</p>
         <div class="btn-row">
           <a class="btn-nav" href="https://www.google.com/maps/search/?api=1&query=Heidbodme%20Saas-Almagell" target="_blank" rel="noopener">🧭 ניווט</a>
@@ -578,10 +580,9 @@
         </div>
         <div class="more-content">
           <ul>
-            <li class="price">מחיר הלוך-חזור Furggstalden–Heidbodme: 19 פר' (מבוגר) / 9.50 פר' (ילד)</li>
-            <li class="price">מחיר משולב משני הרכבלים מסאס אלמגל הלוך-חזור: 26 פר' (מבוגר) / 13 פר' (ילד)</li>
+            <li>איך מגיעים: מתחנת הרכבל Furggstalden יורדים טיפה למטה (לא עולים) ופונים ימינה, לכיוון תחנת ההמשך של Heidbodme</li>
             <li>תצפית פתוחה על רכס מונטה רוזה ועל אגם מטמרק</li>
-            <li>גם זהו רכבל כיסאות פתוח, ובדרך כלל פועל לפי אותו לוח זמנים (כולל הפסקת הצהריים) כמו ברכבל Furggstalden</li>
+            <li>גם זהו רכבל כיסאות פתוח, כלול ללא תשלום נוסף בכרטיס SaastalCard, ובדרך כלל פועל לפי אותו לוח זמנים (כולל הפסקת הצהריים) כמו ברכבל Furggstalden</li>
           </ul>
         </div>
       </div>
