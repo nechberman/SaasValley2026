@@ -122,9 +122,23 @@
   .more-content li{ margin-bottom:5px; }
   .more-content .price{ font-weight:700; color:#1f5c85; }
 
+  .region.info .region-body{
+    display:grid; grid-template-columns:1fr; gap:14px;
+  }
+  @media (min-width:560px){
+    .region.info .region-body{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media (min-width:860px){
+    .region.info .region-body{ grid-template-columns:repeat(3,1fr); }
+  }
   .region.info .attraction{
     background:#fdf8ee; border:none; border-right:4px solid #c79a4e;
-    border-radius:8px; padding:13px 16px;
+    border-radius:10px; padding:14px 16px; margin-bottom:0;
+    box-shadow:0 2px 6px rgba(183,138,57,.15);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .region.info .attraction:hover{
+    transform:translateY(-2px); box-shadow:0 6px 14px rgba(183,138,57,.22);
   }
   .region.info .attraction h3{ font-size:15.5px; }
 
@@ -161,7 +175,7 @@
         <h3>המדריך המלא לשומרי שבת וכשרות בשוויץ</h3>
         <p class="desc">כדי לסגור את כל הפינות בצורה הכי בטוחה ורגועה, מומלץ מאוד להיעזר ב<a href="https://metaylimbkipa.com/switzerland-kosher-guide/#form" target="_blank" rel="noopener">מדריך שוויץ לשומרי שבת וכשרות של אתר "מטיילים בכיפה"</a> – מדריך דיגיטלי מקיף המתעדכן באופן שוטף.</p>
         <div class="btn-row">
-          <a class="btn-nav" href="https://metaylimbkipa.com/switzerland-kosher-guide/#form" target="_blank" rel="noopener">📖 למדריך המלא</a>
+          <a class="btn-nav" href="https://metaylimbkipa.com/switzerland-kosher-guide/#form" target="_blank" rel="noopener">📖 לרכישת המדריך</a>
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
         </div>
         <div class="more-content">
@@ -176,7 +190,7 @@
       </div>
 
       <div class="attraction">
-        <h3>כרטיס הרכבלים והתחבורה – SaastalCard</h3>
+        <h3>🎫 כרטיס הרכבלים והתחבורה – SaastalCard</h3>
         <p class="desc">הטבה משמעותית ביותר למקבלים פעם ראשונה: ברוב מקומות האירוח בעמק תקבלו עם הגעתכם את כרטיס ה-SaastalCard.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -191,7 +205,7 @@
       </div>
 
       <div class="attraction">
-        <h3>חוקי הזבל המקומיים (חשוב לדעת!)</h3>
+        <h3>🗑️ חוקי הזבל המקומיים (חשוב לדעת!)</h3>
         <p class="desc">בשוויץ נושא המיחזור והאשפה מוסדר בקפידה, והתשלום על פינוי האשפה נעשה דרך רכישת שקיות מיוחדות.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -205,7 +219,7 @@
       </div>
 
       <div class="attraction">
-        <h3>עמק הסאס לציבור שומרי המצוות</h3>
+        <h3>🙏 עמק הסאס לציבור שומרי המצוות</h3>
         <p class="desc">במהלך עונת הקיץ, ובמיוחד בתקופת "בין הזמנים", עמק הסאס הופך למוקד משיכה מרכזי עבור מאות משפחות של יהודים שומרי מצוות מהארץ ומכל רחבי אירופה. הקהילה מתרכזת בעיקר בשלוש העיירות המרכזיות בעמק: סאס-פה, סאס-גרונד וסאס-אלמגל.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -220,7 +234,7 @@
       </div>
 
       <div class="attraction">
-        <h3>מנייני תפילה והתארגנות הקהילה בשטח</h3>
+        <h3>🕍 מנייני תפילה והתארגנות הקהילה בשטח</h3>
         <p class="desc">התפתחות מנייני התפילה בעמק דינמית ומשתנה משנה לשנה, וחשוב להכיר את המצב העדכני לשנת תשפ"ו:</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -242,7 +256,7 @@
       </div>
 
       <div class="attraction">
-        <h3>ארבע העיירות בעמק</h3>
+        <h3>🏘️ ארבע העיירות בעמק</h3>
         <p class="desc">העמק מורכב מארבע עיירות, כאשר לכל אחת מהן אופי ומיקום מעט שונה.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -252,18 +266,27 @@
             <li><b>סאס-פה (Saas-Fee):</b> העיירה הגבוהה ביותר בעמק. היא סגורה לחלוטין לכניסת מכוניות (התנועה בפנים היא רק ברגל או ברכבים חשמליים קטנים), ויש בה מגוון חנויות ורכבלים ישירים לפסגות הגבוהות ביותר</li>
             <li><b>סאס-גרונד (Saas-Grund):</b> ממוקמת בקרקעית ובמרכז העמק. היא נגישה מאוד ברכב, וממנה יוצא הרכבל המרכזי להוהסאס (Hohsaas)</li>
             <li><b>סאס-אלמגל (Saas-Almagell):</b> עיירה שקטה, פסטורלית ומשפחתית מאוד, השוכנת בחלקו הפנימי והעמוק יותר של העמק</li>
-            <li><b>סאס-באלן (Saas-Balen):</b> העיירה הראשונה שפוגשים כשנכנסים לעמק. בעיירה זו נמצא מפל מים מרהיב (Fellbach)
-              <ul>
-                <li><a href="https://maps.app.goo.gl/dgwP5MokUKhr59BN6" target="_blank" rel="noopener">מיקום המפל ב-Google Maps</a></li>
-                <li>טיפ הגעה: מומלץ לחנות את הרכב למטה במקומות המסומנים. מהחניה יש לעלות ברגל הליכה קצרה של כ-5 דקות בלבד עד למפל</li>
-              </ul>
-            </li>
+            <li><b>סאס-באלן (Saas-Balen):</b> העיירה הראשונה שפוגשים כשנכנסים לעמק. בעיירה זו נמצא מפל המים המרהיב Fellbach (פרטים והגעה בכרטיס הנפרד)</li>
           </ul>
         </div>
       </div>
 
       <div class="attraction">
-        <h3>מוקד מרכזי – מלון דירות מונטלה (Montela)</h3>
+        <h3>💧 מפל המים בסאס-באלן <span class="orig">Fellbach</span></h3>
+        <p class="desc">מפל מים מרהיב הממוקם בעיירה סאס-באלן, העיירה הראשונה שפוגשים כשנכנסים לעמק.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="https://maps.app.goo.gl/dgwP5MokUKhr59BN6" target="_blank" rel="noopener">🧭 מיקום המפל ב-Google Maps</a>
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>טיפ הגעה: מומלץ לחנות את הרכב למטה במקומות המסומנים. מהחניה יש לעלות ברגל הליכה קצרה של כ-5 דקות בלבד עד למפל</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🏠 מוקד מרכזי – מלון דירות מונטלה (Montela)</h3>
         <p class="desc">מתחם דירות פופולרי מאוד שבו מתרכזות משפחות יהודיות רבות. המתחם ערוך ומותאם בצורה יוצאת דופן לצרכי הציבור הדתי.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -279,7 +302,7 @@
       </div>
 
       <div class="attraction">
-        <h3>קניות והצטיידות בכשרות בסופר המקומי</h3>
+        <h3>🛒 קניות והצטיידות בכשרות בסופר המקומי</h3>
         <p class="desc">בעמק פועלים סניפים של רשת הסופרמרקטים השוויצרית הגדולה Coop (אין כיום חנויות Migros בעמק), בהם ניתן לקנות את כל המצרכים הבסיסיים:</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -294,7 +317,7 @@
       </div>
 
       <div class="attraction">
-        <h3>דרכי הגעה לעמק ומידע לתחבורה</h3>
+        <h3>🚆 דרכי הגעה לעמק ומידע לתחבורה</h3>
         <p class="desc">ההגעה לעמק יעילה מאוד הן ברכב והן בתחבורה ציבורית. מומלץ להוריד את אפליקציית SBB Mobile – האפליקציה הרשמית של התחבורה הציבורית בשוויץ, המציגה לוחות זמנים מדויקים בזמן אמת, מספרי רציפים ומחירי כרטיסים.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
@@ -311,7 +334,7 @@
       </div>
 
       <div class="attraction">
-        <h3>מידע חשוב למגיעים ברכב פרטי (חניה והתניידות)</h3>
+        <h3>🚗 מידע חשוב למגיעים ברכב פרטי (חניה והתניידות)</h3>
         <p class="desc">כמה דברים שכדאי לדעת על חניה ותחבורה בעמק, גם למגיעים ברכב פרטי וגם בתחבורה ציבורית.</p>
         <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
