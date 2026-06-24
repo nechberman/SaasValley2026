@@ -17,6 +17,7 @@
     --grund-grad: linear-gradient(135deg,#dcefce,#8fc47e,#3f7a3f);
     --almagell-grad: linear-gradient(135deg,#e6e3f3,#a6a8cf,#5b5e90);
     --balen-grad: linear-gradient(135deg,#d7f3ee,#6cc4b6,#1f6e5c);
+    --food-grad: linear-gradient(135deg,#fbe3d9,#e08b62,#a8462a);
     --main-grad: linear-gradient(135deg,#1b2a4a 0%,#2f6690 48%,#f2b56b 100%);
     --green-nav:#4a6b3f;
   }
@@ -86,6 +87,7 @@
   .region.grund .region-header{ background-image:var(--grund-grad); }
   .region.almagell .region-header{ background-image:var(--almagell-grad); }
   .region.balen .region-header{ background-image:var(--balen-grad); }
+  .region.food .region-header{ background-image:var(--food-grad); }
 
   .region-body{ padding:14px; }
 
@@ -108,6 +110,11 @@
   .attraction p.desc{
     margin:4px 0 10px; font-size:14px; color:#475550;
   }
+  .attraction h4{
+    margin:14px 0 4px; font-size:14.5px; font-weight:700; color:#22323c;
+  }
+  .attraction > ul{ margin:0 0 10px; padding-right:18px; font-size:14px; color:#475550; }
+  .attraction > ul li{ margin-bottom:5px; }
   .btn-row{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   .btn-nav, .show-more-btn{
     border:none; border-radius:18px; font-size:12px; font-weight:600;
@@ -143,6 +150,7 @@
     transform:translateY(-2px); box-shadow:0 6px 14px rgba(183,138,57,.22);
   }
   .region.info .attraction h3{ font-size:15.5px; }
+  .region.info .attraction.wide{ grid-column:1 / -1; }
 
   footer{
     margin-top:30px; text-align:center; font-size:12px; color:#8a958f;
@@ -162,8 +170,6 @@
     </div>
   </div>
 
-  <p class="intro-text">עמק הסאס (Saastal) הוא אחד מאזורי הטבע המרהיבים והפופולריים ביותר בשוויץ. העמק מוקף ב-18 פסגות הרים אדירות המתנשאות לגובה של מעל 4,000 מטרים, המעניקות לו תפאורה אלפינית עוצרת נשימה, קרחוני עד ואוויר הרים צלול ונקי (העיירה סאס-פה, למשל, סגורה לחלוטין לתנועת כלי רכב מנועיים). בין אם זו הפעם הראשונה שלכם בעמק ובין אם כבר ביקרתם בו, האזור תמיד מציע פינות חדשות לגלות.</p>
-
   <!-- ===================== מידע כללי על האזור ===================== -->
   <div class="region info">
     <div class="region-header">
@@ -171,6 +177,28 @@
       <p>כל מה שכדאי לדעת לפני הנסיעה</p>
     </div>
     <div class="region-body">
+
+      <div class="attraction wide">
+        <h3>ברוכים הבאים לעמק הסאס (Saastal)</h3>
+        <p class="desc">עמק הסאס (Saastal) הוא אחד מאזורי הטבע המרהיבים והפופולריים ביותר בשוויץ. העמק מוקף ב-18 פסגות הרים אדירות המתנשאות לגובה של מעל 4,000 מטרים, המעניקות לו תפאורה אלפינית עוצרת נשימה, קרחוני עד ואוויר הרים צלול ונקי (העיירה סאס-פה, למשל, סגורה לחלוטין לתנועת כלי רכב מנועיים). בין אם זו הפעם הראשונה שלכם בעמק ובין אם כבר ביקרתם בו, האזור תמיד מציע פינות חדשות לגלות.</p>
+
+        <h4>🏘️ ארבע העיירות בעמק</h4>
+        <p class="desc">העמק מורכב מארבע עיירות, כאשר לכל אחת מהן אופי ומיקום מעט שונה:</p>
+        <ul>
+          <li><b>סאס-פה (Saas-Fee):</b> העיירה הגבוהה ביותר בעמק. היא סגורה לחלוטין לכניסת מכוניות (התנועה בפנים היא רק ברגל או ברכבים חשמליים קטנים), ויש בה מגוון חנויות ורכבלים ישירים לפסגות הגבוהות ביותר.</li>
+          <li><b>סאס-גרונד (Saas-Grund):</b> ממוקמת בקרקעית ובמרכז העמק. היא נגישה מאוד ברכב וממנה יוצא הרכבל המרכזי להוהסאס (Hohsaas).</li>
+          <li><b>סאס-אלמגל (Saas-Almagell):</b> עיירה שקטה, פסטורלית ומשפחתית מאוד, השוכנת בחלקו הפנימי והעמוק יותר של העמק.</li>
+          <li><b>סאס-באלן (Saas-Balen):</b> העיירה הראשונה שפוגשים כשנכנסים לעמק. בעיירה זו נמצא מפל המים המרהיב Fellbach.</li>
+        </ul>
+
+        <h4>🙏 עמק הסאס לציבור שומרי המצוות</h4>
+        <p class="desc">במהלך עונת הקיץ, ובמיוחד בתקופת "בין הזמנים", עמק הסאס הופך למוקד משיכה מרכזי עבור מאות משפחות של יהודים שומרי מצוות מהארץ ומכל רחבי אירופה. הקהילה מתרכזת בעיקר בשלוש העיירות: סאס-פה, סאס-גרונד וסאס-אלמגל.</p>
+        <ul>
+          <li>אווירת חופש וקהילה: השילוב של נופי בראשית יחד עם הידיעה שלא תהיו לבד יוצר תחושה ייחודית. יש מטיילים שמגיעים לעמק כל קיץ כבר למעלה מ-35 שנה, נאמנים לקסם המקום.</li>
+          <li>זמני הגעה: התנועה מתחילה לרוב במהלך הקיץ; חלק מהמטיילים מגיעים עוד לפני תשעה באב, אך עיקר העומס והתפילות מתרכזים מיד לאחר תשעה באב ועד לראש חודש אלול.</li>
+          <li>שיעורי תורה ואוכל כשר: בתקופת השיא מתקיימים שיעורי תורה, וכן אספקה מאורגנת של חלות טריות ואוכל מוכן לכבוד שבת קודש.</li>
+        </ul>
+      </div>
 
       <div class="attraction">
         <span class="badge must">🔥 חשוב לדעת</span>
@@ -221,56 +249,31 @@
       </div>
 
       <div class="attraction">
-        <h3>🙏 עמק הסאס לציבור שומרי המצוות</h3>
-        <p class="desc">במהלך עונת הקיץ, ובמיוחד בתקופת "בין הזמנים", עמק הסאס הופך למוקד משיכה מרכזי עבור מאות משפחות של יהודים שומרי מצוות מהארץ ומכל רחבי אירופה. הקהילה מתרכזת בעיקר בשלוש העיירות המרכזיות בעמק: סאס-פה, סאס-גרונד וסאס-אלמגל.</p>
-        <div class="btn-row">
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li>אווירת חופש וקהילה: השילוב של נופי בראשית יחד עם הידיעה שלא תהיו לבד יוצר תחושה ייחודית. יש מטיילים שמגיעים לעמק כל קיץ כבר למעלה מ-35 שנה, נאמנים לקסם המקום</li>
-            <li>זמני הגעה: התנועה מתחילה לרוב במהלך הקיץ; חלק מהמטיילים מגיעים עוד לפני תשעה באב, אך עיקר העומס והתפילות מתרכזים מיד לאחר תשעה באב ועד לראש חודש אלול</li>
-            <li>שיעורי תורה ואוכל כשר: בתקופת השיא מתקיימים שיעורי תורה, וכן אספקה מאורגנת של חלות טריות ואוכל מוכן לכבוד שבת קודש (לפרטי מנייני התפילה העדכניים, ראו בכרטיס הבא)</li>
-          </ul>
-        </div>
-      </div>
+        <h3>🕍 מנייני תפילה והתארגנות הקהילה (תשפ"ו)</h3>
 
-      <div class="attraction">
-        <h3>🕍 מנייני תפילה והתארגנות הקהילה בשטח</h3>
-        <p class="desc">התפתחות מנייני התפילה בעמק דינמית ומשתנה משנה לשנה, וחשוב להכיר את המצב העדכני לשנת תשפ"ו:</p>
-        <div class="btn-row">
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li>השינוי בסאס-פה (Saas-Fee): עד לשנת תשפ"ה, היה מקום מרכזי קבוע שנשכר בסאס-פה והוכשר לשמש כבית כנסת עבור הציבור הרחב. מכיוון שהשנה לא ניתן היה לשכור מחדש את אותו המקום, המטיילים בעיירה התארגנו באופן עצמאי ומקיימים מניינים עצמאיים בבתים ובדירות השונות</li>
-            <li>עדכוני מניינים בולטים בעמק:
-              <ul>
-                <li>🕍 מניין משפחת לנג (סאס-פה): יתקיים מניין פעיל בבית משפחת לנג – <a href="https://maps.app.goo.gl/1dmwZqb1G3vts6ex7" target="_blank" rel="noopener">📍 מיקום המניין ב-Google Maps</a></li>
-                <li>🕍 מניין סאס-אלמגל (Saas-Almagell): בעזרת השם יתברך, יתקיים מניין קבוע עם ספר תורה בין התאריכים 26.7 עד 10.8 במלון Almagellerhof – <a href="https://www.google.com/maps/search/?api=1&query=Almagellerhof%20Saas-Almagell" target="_blank" rel="noopener">📍 מיקום המלון והמניין ב-Google Maps</a></li>
-                <li>🏢 המרכז המרכזי בסאס-גרונד – קומפלקס מונטלה (Montela): השנה יפעל מניין תפילה קבוע ומסודר באחד מבנייני הקומפלקס בקומה 1-. המניין כרוך בעלות סמלית המיועדת אך ורק לכיסוי הוצאות השכירות של המקום מהמארגנים. כדי להבטיח את מקומכם ולסייע בהתארגנות, יש להירשם מראש בקישור הבא: <a href="https://forms.gle/EgmrKRdMmrGp8sMv6" target="_blank" rel="noopener">טופס רישום למניין במונטלה</a></li>
-                <li>❌ המניינים הקבועים שהתקיימו בשנת תשפ"ה אצל הרב פומרנץ ואצל משפחת כץ בבנייני אטלס – ככל הנראה לא יתקיימו השנה (תשפ"ו)</li>
-              </ul>
-            </li>
-            <li>פרטים מדויקים ועדכונים נוספים לגבי מיקומי ושעות התפילות יתעדכנו כאן באתר בהמשך</li>
-          </ul>
-        </div>
-      </div>
+        <h4>🏢 מניין בסאס-גרונד – קומפלקס מונטלה <span class="orig">Montela</span></h4>
+        <p class="desc">השנה יפעל מניין תפילה קבוע ומסודר באחד מבנייני הקומפלקס בקומה 1-. המניין כרוך בעלות סמלית המיועדת אך ורק לכיסוי הוצאות השכירות של המקום מהמארגנים.</p>
+        <ul>
+          <li>📝 רישום מראש: כדי להבטיח את מקומכם ולסייע בהתארגנות, יש להירשם מראש בקישור הבא: <a href="https://forms.gle/EgmrKRdMmrGp8sMv6" target="_blank" rel="noopener">טופס רישום למניין במונטלה</a></li>
+        </ul>
 
-      <div class="attraction">
-        <h3>🏘️ ארבע העיירות בעמק</h3>
-        <p class="desc">העמק מורכב מארבע עיירות, כאשר לכל אחת מהן אופי ומיקום מעט שונה.</p>
-        <div class="btn-row">
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li><b>סאס-פה (Saas-Fee):</b> העיירה הגבוהה ביותר בעמק. היא סגורה לחלוטין לכניסת מכוניות (התנועה בפנים היא רק ברגל או ברכבים חשמליים קטנים), ויש בה מגוון חנויות ורכבלים ישירים לפסגות הגבוהות ביותר.</li>
-            <li><b>סאס-גרונד (Saas-Grund):</b> ממוקמת בקרקעית ובמרכז העמק. היא נגישה מאוד ברכב וממנה יוצא הרכבל המרכזי להוהסאס (Hohsaas).</li>
-            <li><b>סאס-אלמגל (Saas-Almagell):</b> עיירה שקטה, פסטורלית ומשפחתית מאוד, השוכנת בחלקו הפנימי והעמוק יותר של העמק.</li>
-            <li><b>סאס-באלן (Saas-Balen):</b> העיירה הראשונה שפוגשים כשנכנסים לעמק. בעיירה זו נמצא מפל המים המרהיב Fellbach.</li>
-          </ul>
-        </div>
+        <h4>🏠 מניין משפחת לנג (סאס-גרונד)</h4>
+        <p class="desc">יתקיים מניין פעיל בבית משפחת לנג בסאס-גרונד.</p>
+        <ul>
+          <li>📍 <a href="https://maps.app.goo.gl/1dmwZqb1G3vts6ex7" target="_blank" rel="noopener">לחצו כאן למיקום המניין ב-Google Maps</a></li>
+        </ul>
+
+        <h4>🏨 מניין סאס-אלמגל <span class="orig">Saas-Almagell</span></h4>
+        <p class="desc">בעזרת השם יתברך, יתקיים מניין קבוע עם ספר תורה בין התאריכים 26.7 עד 10.8 במלון Almagellerhof.</p>
+        <ul>
+          <li>📍 <a href="https://maps.app.goo.gl/JhJfAW87HRQP6xhSA" target="_blank" rel="noopener">לחצו כאן למיקום המלון והמניין ב-Google Maps</a></li>
+        </ul>
+
+        <h4>⚠️ השינוי בסאס-פה <span class="orig">Saas-Fee</span></h4>
+        <p class="desc">עד לשנת תשפ"ה, היה מקום מרכזי קבוע שנשכר בסאס-פה והוכשר לשמש כבית כנסת עבור הציבור הרחב. מכיוון שהשנה לא ניתן היה לשכור מחדש את אותו המקום, המטיילים בעיירה התארגנו באופן עצמאי ומקיימים מניינים עצמאיים בבתים ובדירות השונות.</p>
+        <ul>
+          <li>שימו לב: המניינים הקבועים שהתקיימו בשנת תשפ"ה אצל הרב פומרנץ ואצל משפחת כץ בבנייני אטלס – ככל הנראה לא יתקיימו השנה (תשפ"ו)</li>
+        </ul>
       </div>
 
       <div class="attraction">
@@ -281,69 +284,12 @@
         </div>
         <div class="more-content">
           <ul>
-            <li>מנייני תפילה: השנה (תשפ"ו) יתקיים באחד מבניני הקומפלקס (קומה 1-) מניין תפילה קבוע ומסודר, בעלות סמלית המיועדת לכיסוי הוצאות השכירות של המארגנים. לפרטים מלאים ועדכניים – ראו בכרטיס "מנייני תפילה והתארגנות הקהילה בשטח" למעלה</li>
+            <li>מנייני תפילה: השנה (תשפ"ו) יתקיים באחד מבניני הקומפלקס (קומה 1-) מניין תפילה קבוע ומסודר, בעלות סמלית המיועדת לכיסוי הוצאות השכירות של המארגנים. לפרטים מלאים ועדכניים – ראו בכרטיס "מנייני תפילה והתארגנות הקהילה (תשפ"ו)" למעלה</li>
             <li>התאמות לשבת: ההנהלה מציבה מנורות קטנות במסדרונות במהלך השבת כדי למנוע הפעלת חיישני אור אוטומטיים. כדי להימנע משימוש במפתח האלקטרוני ניתן לבקש מראש לבטל את הנעילה החשמלית, בעלות של 50 פר' לשבת (יש לתאם מראש)</li>
             <li>שירותים נוספים: משחקייה פעילה לילדים, ואפשרות כביסה וייבוש במכונות המקום (ניתן לרכוש מטבעות בקבלה)</li>
             <li>להזמנות ופרטים נוספים: <a href="https://www.montela.ch/en.html" target="_blank" rel="noopener">אתר האינטרנט הרשמי של Montela Apartments</a> · <a href="https://www.booking.com/hotel/ch/montela-apartments-2-5-zi-whg-eg.he.html?chal_t=1781867523065&force_referer=" target="_blank" rel="noopener">עמוד הדירות באתר Booking.com</a></li>
           </ul>
         </div>
-      </div>
-
-      <div class="attraction">
-        <h3>🛒 קניות והצטיידות בכשרות בסופר המקומי</h3>
-        <p class="desc">בעמק פועלים סניפים של רשת הסופרמרקטים השוויצרית הגדולה Coop (אין כיום חנויות Migros בעמק), בהם ניתן לקנות את כל המצרכים הבסיסיים:</p>
-        <div class="btn-row">
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li><a href="https://maps.app.goo.gl/412DoxnBjipSgEP2A" target="_blank" rel="noopener">סניף קואופ בסאס-גרונד - Coop Saas-Grund</a></li>
-            <li>סניפים בסאס-פה: <a href="https://maps.app.goo.gl/jKUonwSXivCfJ7aw5" target="_blank" rel="noopener">סניף Coop Saas-Fee מרכזי</a> · <a href="https://maps.app.goo.gl/yziUcQ7LasHMLNRW9" target="_blank" rel="noopener">סניף Coop Saas-Fee נוסף</a></li>
-            <li>לרשימת כשרות מפורטת ומצולמת של המוצרים בסניפי Coop – ראו בכרטיס "המדריך המלא לשומרי שבת וכשרות בשוויץ" למעלה</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="attraction">
-        <h3>🥩 חוקי ייבוא בשר לשוויץ (חשוב לדעת!)</h3>
-        <p class="desc">חל איסור מוחלט לייבא בשר לשוויץ ממדינות שאינן חלק מהאיחוד האירופי (כולל מישראל). עם זאת, למי שמגיע או מזמין דרך מדינות האיחוד האירופי, החוק השוויצרי מתיר להעביר עד 1 ק"ג בשר לאדם בלבד. קחו זאת בחשבון בתכנון המשקלים והקניות שלכם.</p>
-      </div>
-
-      <div class="attraction">
-        <h3>🇮🇹 הזמנת אוכל כשר ממילאנו <span class="orig">Kosher Food In Europe</span></h3>
-        <p class="desc">פתרון מעולה למשפחות בעמק: ניתן לבצע הזמנה מראש של אוכל כשר, והוא מגיע ארוז ומאורגן בקופסאות קלקר ייעודיות השומרות על טריות והקפאה לאורך כל הדרך. ניתן לבצע משלוח ישיר או לבצע איסוף עצמי מחנות המפעל במילאנו.</p>
-        <div class="btn-row">
-          <a class="btn-nav" href="http://www.kosherfood.it" target="_blank" rel="noopener">🌐 לאתר ההזמנות</a>
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li>💬 וואטסאפ לבירורים והזמנות: <a href="https://wa.me/393490588958" target="_blank" rel="noopener">+39 349 058 8958</a></li>
-            <li>📧 מייל: <a href="mailto:Info@kosherfoodineurope.com">Info@kosherfoodineurope.com</a></li>
-            <li>📍 <a href="https://maps.app.goo.gl/jMaoS9CayngwiKkK8" target="_blank" rel="noopener">מיקום חנות המפעל במילאנו ב-Google Maps</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="attraction">
-        <h3>🇨🇭 קייטרינג "עונג שבת" מציריך <span class="orig">משלוחים לעמק</span></h3>
-        <p class="desc">מעדני עונג שבת – קייטרינג מוערך בציריך הפועל בהשגחת אב"ד אגודת אחים ציריך. השנה בעז"ה (קיץ תשפ"ו), הקייטרינג יספק לעמק הסאאס את כל מאכלי השבת וכן מוצרי חלב כשרים.</p>
-        <div class="btn-row">
-          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
-        </div>
-        <div class="more-content">
-          <ul>
-            <li>🗓️ מועדי מכירה בסאס-פה: המכירה בשטח תתקיים בימי שישי ה-31 ביולי וב-7 באוגוסט</li>
-            <li class="price">⚠️ שימו לב: המכירה מותנית בהזמנה מראש בלבד! תפריט ומחירים מעודכנים ניתן לראות ולהזמין ישירות באתר שלהם</li>
-            <li>📞 טלפונים ליצירת קשר: <a href="tel:+41766881952">+41 76 688 19 52</a> · <a href="tel:+41787458909">+41 78 745 89 09</a></li>
-            <li>📧 מייל להזמנות: <a href="mailto:oinegshabbes@gmail.com">oinegshabbes@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="attraction">
-        <h3>🔌 השכרת פלטות שבת בעמק</h3>
-        <p class="desc">למי שצריך פלטת שבת לדירה, ניתן לתאם השכרה מראש באמצעות פנייה במייל: <a href="mailto:Jewishsaas@gmail.com">Jewishsaas@gmail.com</a>.</p>
       </div>
 
       <div class="attraction">
@@ -358,7 +304,7 @@
             <li><b>שדה התעופה ז'נבה (Geneva):</b> השדה המהיר ביותר בשטח שוויץ – רכבת ישירה לויספ כ-2:15 שעות (סך הכל כ-3 שעות לעמק כולל אוטובוס). ברכב – כחצי שעה פחות בערך</li>
             <li><b>שדה התעופה ציריך (Zurich):</b> רכבת דרך ברן לויספ כ-2:15–2:30 שעות (סך הכל כ-3:15 שעות לעמק). ברכב כ-3.5 שעות, כולל מעבר ב"רכבת מכוניות" Autoverlad בלצ'ברג (Lötschberg) – העלאת הרכב על רכבת ייעודית במנהרה, בעלות של כ-27–30 פר'</li>
             <li><b>שדה התעופה באזל (Basel):</b> רכבת כ-2:45 שעות לויספ. ברכב כ-3:15 שעות (גם כן עם רכבת המכוניות בלצ'ברג)</li>
-            <li><b>שדה התעופה מילאנו (Milano), איטליה:</b> ברכב הדרך הנוחה ביותר – כ-2.5–3 שעות, דרך מעבר ההרים סימפלון (Simplon Pass), דרך הררית מפותלת הדורשת נהיגת הרים. בתחבורה ציבורית כ-4 שעות ומעלה</li>
+            <li><b>שדה התעופה מילאנו (Milano), איטליה:</b> ברכב הדרך הנוחה ביותר – כ-2.5–3 שעות. המסלול כולל אפשרות נסיעה הכוללת מעבר ב"רכבת מכוניות" (Autoverlad) הקיימת במעבר סימפלון (Simplon). בתחבורה ציבורית כ-4 שעות ומעלה</li>
           </ul>
         </div>
       </div>
@@ -386,24 +332,95 @@
       </div>
 
       <div class="attraction">
-        <h3>👥 קהילה, עדכונים ופנאי בעמק</h3>
-        <p class="desc">קבוצת הוואטסאפ הרשמית של המטיילים בעמק הסאאס, ומידע על בריכת השחייה בהפרדה לקיץ הקרוב.</p>
+        <h3>💬 קבוצת הוואטסאפ של עמק הסאס</h3>
+        <p class="desc">רוצים להישאר מעודכנים לגבי מניינים, טרמפים, מוצרים כשרים בסופר ועדכונים מהשטח בזמן אמת? הצטרפו לקבוצת הוואטסאפ הרשמית של המטיילים בעמק הסאאס.</p>
         <div class="btn-row">
           <a class="btn-nav" href="https://chat.whatsapp.com/Bm24iReCbJ24dluuGXmdwi" target="_blank" rel="noopener">💬 הצטרפות לקבוצת הוואטסאפ</a>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🏊‍♂️ בריכת שחייה בהפרדה (קיץ 2026)</h3>
+        <p class="desc">ככל הנראה תופעל השנה בריכת שחייה בשעות נפרדות לגברים ולנשים (הדבר תלוי בהתארגנות הסופית במקום, מומלץ להתעדכן בקבוצת הוואטסאפ).</p>
+        <div class="btn-row">
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
         </div>
         <div class="more-content">
           <ul>
-            <li>💬 קבוצת הוואטסאפ הרשמית של המטיילים בעמק הסאאס: רוצים להישאר מעודכנים לגבי מניינים, טרמפים, מוצרים כשרים בסופר ועדכונים מהשטח בזמן אמת? <a href="https://chat.whatsapp.com/Bm24iReCbJ24dluuGXmdwi" target="_blank" rel="noopener">לחצו כאן להצטרפות</a></li>
-            <li>🏊‍♂️ בריכת שחייה בהפרדה (קיץ 2026): ככל הנראה תופעל השנה בריכת שחייה בשעות נפרדות לגברים ולנשים (הדבר תלוי בהתארגנות הסופית במקום, מומלץ להתעדכן בקבוצת הוואטסאפ)
-              <ul>
-                <li>שעות פעילות מתוכננות: 20:50–22:00</li>
-                <li>ימי נשים: ראשון ורביעי · ימי גברים: שני וחמישי</li>
-                <li>📍 מיקום: מתחם wellnessHostel4000 (ממש ליד סניף הדואר המקומי) – <a href="https://www.google.com/maps/search/?api=1&query=wellnessHostel4000%20Saas-Fee" target="_blank" rel="noopener">ניווט ב-Google Maps</a></li>
-              </ul>
-            </li>
+            <li>שעות פעילות מתוכננות: 20:50–22:00</li>
+            <li>ימי נשים: ראשון ורביעי · ימי גברים: שני וחמישי</li>
+            <li>📍 מיקום: מתחם wellnessHostel4000 (ממש ליד סניף הדואר המקומי) – <a href="https://www.google.com/maps/search/?api=1&query=wellnessHostel4000%20Saas-Fee" target="_blank" rel="noopener">ניווט ב-Google Maps</a></li>
           </ul>
         </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== אוכל וכשרות ===================== -->
+  <div class="region food">
+    <div class="region-header">
+      <h2>אוכל וכשרות בעמק</h2>
+      <p>קניות, הזמנות מיוחדות וכל הפתרונות לאוכל כשר לאורך החופשה</p>
+    </div>
+    <div class="region-body">
+
+      <div class="attraction">
+        <h3>🛒 קניות והצטיידות בכשרות בסופר המקומי</h3>
+        <p class="desc">בעמק פועלים סניפים של רשת הסופרמרקטים השוויצרית הגדולה Coop (אין כיום חנויות Migros בעמק), בהם ניתן לקנות את כל המצרכים הבסיסיים:</p>
+        <div class="btn-row">
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li><a href="https://maps.app.goo.gl/412DoxnBjipSgEP2A" target="_blank" rel="noopener">סניף קואופ בסאס-גרונד - Coop Saas-Grund</a></li>
+            <li>סניפים בסאס-פה: <a href="https://maps.app.goo.gl/jKUonwSXivCfJ7aw5" target="_blank" rel="noopener">סניף Coop Saas-Fee מרכזי</a> · <a href="https://maps.app.goo.gl/yziUcQ7LasHMLNRW9" target="_blank" rel="noopener">סניף Coop Saas-Fee נוסף</a></li>
+            <li>לרשימת כשרות מפורטת ומצולמת של המוצרים בסניפי Coop – ראו בכרטיס "המדריך המלא לשומרי שבת וכשרות בשוויץ" באזור המידע הכללי למעלה</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🇨🇭 קייטרינג "עונג שבת" מציריך <span class="orig">משלוחים לעמק</span></h3>
+        <p class="desc">מעדני עונג שבת – קייטרינג מוערך בציריך הפועל בהשגחת אב"ד אגודת אחים ציריך. השנה בעז"ה (קיץ תשפ"ו), הקייטרינג יספק לעמק הסאאס את כל מאכלי השבת וכן מוצרי חלב כשרים.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="https://oinegshabbes.com/" target="_blank" rel="noopener">🌐 לאתר ההזמנות</a>
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>🗓️ מועדי מכירה בסאס-פה: המכירה בשטח תתקיים בימי שישי ה-31 ביולי וב-7 באוגוסט</li>
+            <li class="price">⚠️ שימו לב: המכירה מותנית בהזמנה מראש בלבד! תפריט ומחירים מעודכנים ניתן לראות ולהזמין ישירות באתר שלהם</li>
+            <li>📞 טלפון ליצירת קשר (וואטסאפ): <a href="https://wa.me/41787458907" target="_blank" rel="noopener">+41 78 745 89 07</a></li>
+            <li>📧 מייל להזמנות: <a href="mailto:oinegshabbes@gmail.com">oinegshabbes@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🇮🇹 הזמנת אוכל כשר ממילאנו <span class="orig">Kosher Food In Europe</span></h3>
+        <p class="desc">ניתן לבצע הזמנה מראש של אוכל כשר, והוא מגיע ארוז ומאורגן בקופסאות קלקר ייעודיות השומרות על טריות והקפאה לאורך כל הדרך. ניתן לבצע משלוח ישיר או לבצע איסוף עצמי מחנות המפעל במילאנו.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="http://www.kosherfood.it" target="_blank" rel="noopener">🌐 לאתר ההזמנות</a>
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>💬 וואטסאפ לבירורים והזמנות: <a href="https://wa.me/393490588958" target="_blank" rel="noopener">+39 349 058 8958</a></li>
+            <li>📧 מייל: <a href="mailto:Info@kosherfoodineurope.com">Info@kosherfoodineurope.com</a></li>
+            <li>📍 <a href="https://maps.app.goo.gl/jMaoS9CayngwiKkK8" target="_blank" rel="noopener">מיקום חנות המפעל במילאנו ב-Google Maps</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🥩 חוקי ייבוא בשר לשוויץ (חשוב לדעת!)</h3>
+        <p class="desc">חל איסור מוחלט לייבא בשר לשוויץ ממדינות שאינן חלק מהאיחוד האירופי (כולל מישראל). עם זאת, למי שמגיע או מזמין דרך מדינות האיחוד האירופי, החוק השוויצרי מתיר להעביר עד 1 ק"ג בשר לאדם בלבד. קחו זאת בחשבון בתכנון המשקלים והקניות שלכם.</p>
+      </div>
+
+      <div class="attraction">
+        <h3>🔌 השכרת פלטות שבת בעמק</h3>
+        <p class="desc">למי שצריך פלטת שבת לדירה, ניתן לתאם השכרה מראש באמצעות פנייה במייל: <a href="mailto:Jewishsaas@gmail.com">Jewishsaas@gmail.com</a>.</p>
       </div>
 
     </div>
