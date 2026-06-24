@@ -16,6 +16,7 @@
     --fee-grad: linear-gradient(135deg,#d7ecf9,#79b3d9,#1f5c85);
     --grund-grad: linear-gradient(135deg,#dcefce,#8fc47e,#3f7a3f);
     --almagell-grad: linear-gradient(135deg,#e6e3f3,#a6a8cf,#5b5e90);
+    --balen-grad: linear-gradient(135deg,#d7f3ee,#6cc4b6,#1f6e5c);
     --main-grad: linear-gradient(135deg,#1b2a4a 0%,#2f6690 48%,#f2b56b 100%);
     --green-nav:#4a6b3f;
   }
@@ -84,6 +85,7 @@
   .region.fee .region-header{ background-image:var(--fee-grad); }
   .region.grund .region-header{ background-image:var(--grund-grad); }
   .region.almagell .region-header{ background-image:var(--almagell-grad); }
+  .region.balen .region-header{ background-image:var(--balen-grad); }
 
   .region-body{ padding:14px; }
 
@@ -303,6 +305,48 @@
       </div>
 
       <div class="attraction">
+        <h3>🥩 חוקי ייבוא בשר לשוויץ (חשוב לדעת!)</h3>
+        <p class="desc">חל איסור מוחלט לייבא בשר לשוויץ ממדינות שאינן חלק מהאיחוד האירופי (כולל מישראל). עם זאת, למי שמגיע או מזמין דרך מדינות האיחוד האירופי, החוק השוויצרי מתיר להעביר עד 1 ק"ג בשר לאדם בלבד. קחו זאת בחשבון בתכנון המשקלים והקניות שלכם.</p>
+      </div>
+
+      <div class="attraction">
+        <h3>🇮🇹 הזמנת אוכל כשר ממילאנו <span class="orig">Kosher Food In Europe</span></h3>
+        <p class="desc">פתרון מעולה למשפחות בעמק: ניתן לבצע הזמנה מראש של אוכל כשר, והוא מגיע ארוז ומאורגן בקופסאות קלקר ייעודיות השומרות על טריות והקפאה לאורך כל הדרך. ניתן לבצע משלוח ישיר או לבצע איסוף עצמי מחנות המפעל במילאנו.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="http://www.kosherfood.it" target="_blank" rel="noopener">🌐 לאתר ההזמנות</a>
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>💬 וואטסאפ לבירורים והזמנות: <a href="https://wa.me/393490588958" target="_blank" rel="noopener">+39 349 058 8958</a></li>
+            <li>📧 מייל: <a href="mailto:Info@kosherfoodineurope.com">Info@kosherfoodineurope.com</a></li>
+            <li>📍 <a href="https://maps.app.goo.gl/jMaoS9CayngwiKkK8" target="_blank" rel="noopener">מיקום חנות המפעל במילאנו ב-Google Maps</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🇨🇭 קייטרינג "עונג שבת" מציריך <span class="orig">משלוחים לעמק</span></h3>
+        <p class="desc">מעדני עונג שבת – קייטרינג מוערך בציריך הפועל בהשגחת אב"ד אגודת אחים ציריך. השנה בעז"ה (קיץ תשפ"ו), הקייטרינג יספק לעמק הסאאס את כל מאכלי השבת וכן מוצרי חלב כשרים.</p>
+        <div class="btn-row">
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>🗓️ מועדי מכירה בסאס-פה: המכירה בשטח תתקיים בימי שישי ה-31 ביולי וב-7 באוגוסט</li>
+            <li class="price">⚠️ שימו לב: המכירה מותנית בהזמנה מראש בלבד! תפריט ומחירים מעודכנים ניתן לראות ולהזמין ישירות באתר שלהם</li>
+            <li>📞 טלפונים ליצירת קשר: <a href="tel:+41766881952">+41 76 688 19 52</a> · <a href="tel:+41787458909">+41 78 745 89 09</a></li>
+            <li>📧 מייל להזמנות: <a href="mailto:oinegshabbes@gmail.com">oinegshabbes@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attraction">
+        <h3>🔌 השכרת פלטות שבת בעמק</h3>
+        <p class="desc">למי שצריך פלטת שבת לדירה, ניתן לתאם השכרה מראש באמצעות פנייה במייל: <a href="mailto:Jewishsaas@gmail.com">Jewishsaas@gmail.com</a>.</p>
+      </div>
+
+      <div class="attraction">
         <h3>🚆 דרכי הגעה לעמק ומידע לתחבורה</h3>
         <p class="desc">ההגעה לעמק יעילה מאוד הן ברכב והן בתחבורה ציבורית. מומלץ להוריד את אפליקציית SBB Mobile – האפליקציה הרשמית של התחבורה הציבורית בשוויץ, המציגה לוחות זמנים מדויקים בזמן אמת, מספרי רציפים ומחירי כרטיסים.</p>
         <div class="btn-row">
@@ -342,15 +386,22 @@
       </div>
 
       <div class="attraction">
-        <h3>💧 מפל המים בסאס-באלן <span class="orig">Fellbach</span></h3>
-        <p class="desc">מפל מים מרהיב הממוקם בעיירה סאס-באלן, העיירה הראשונה שפוגשים כשנכנסים לעמק.</p>
+        <h3>👥 קהילה, עדכונים ופנאי בעמק</h3>
+        <p class="desc">קבוצת הוואטסאפ הרשמית של המטיילים בעמק הסאאס, ומידע על בריכת השחייה בהפרדה לקיץ הקרוב.</p>
         <div class="btn-row">
-          <a class="btn-nav" href="https://maps.app.goo.gl/dgwP5MokUKhr59BN6" target="_blank" rel="noopener">🧭 מיקום המפל ב-Google Maps</a>
+          <a class="btn-nav" href="https://chat.whatsapp.com/Bm24iReCbJ24dluuGXmdwi" target="_blank" rel="noopener">💬 הצטרפות לקבוצת הוואטסאפ</a>
           <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
         </div>
         <div class="more-content">
           <ul>
-            <li>🥾 טיפ הגעה: מומלץ לחנות את הרכב למטה במקומות המסומנים. מהחניה יש לעלות ברגל עלייה קצרה של כ-5 דקות הליכה בלבד עד למפל.</li>
+            <li>💬 קבוצת הוואטסאפ הרשמית של המטיילים בעמק הסאאס: רוצים להישאר מעודכנים לגבי מניינים, טרמפים, מוצרים כשרים בסופר ועדכונים מהשטח בזמן אמת? <a href="https://chat.whatsapp.com/Bm24iReCbJ24dluuGXmdwi" target="_blank" rel="noopener">לחצו כאן להצטרפות</a></li>
+            <li>🏊‍♂️ בריכת שחייה בהפרדה (קיץ 2026): ככל הנראה תופעל השנה בריכת שחייה בשעות נפרדות לגברים ולנשים (הדבר תלוי בהתארגנות הסופית במקום, מומלץ להתעדכן בקבוצת הוואטסאפ)
+              <ul>
+                <li>שעות פעילות מתוכננות: 20:50–22:00</li>
+                <li>ימי נשים: ראשון ורביעי · ימי גברים: שני וחמישי</li>
+                <li>📍 מיקום: מתחם wellnessHostel4000 (ממש ליד סניף הדואר המקומי) – <a href="https://www.google.com/maps/search/?api=1&query=wellnessHostel4000%20Saas-Fee" target="_blank" rel="noopener">ניווט ב-Google Maps</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -365,6 +416,14 @@
       <p>הכפר הנקי מרכב, מתחת לפסגות הקרחוניות הגבוהות באלפים</p>
     </div>
     <div class="region-body">
+
+      <div class="attraction">
+        <h3>ℹ️ מרכז המידע הרשמי למטייל <span class="orig">Tourist Office Saas-Fee</span></h3>
+        <p class="desc">תחנת חובה למי שמגיע לעיירה. הנציגים במקום מאוד אדיבים, דוברי אנגלית שוטפת, ויוכלו לחלק לכם מפות, לתת מידע עדכני על מצב המסלולים והרכבלים ולענות על כל שאלה בעמק.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="https://maps.app.goo.gl/D3YzkpeFj4ipn1Tn8" target="_blank" rel="noopener">📍 מיקום מרכז המידע ב-Google Maps</a>
+        </div>
+      </div>
 
       <div class="attraction">
         <span class="badge must">🔥 חובה לחוויה</span>
@@ -661,6 +720,31 @@
             <li>רמת קושי: טכנית – סולמות, מדרגות ומעברי סלע חשופים עם אחיזות ורשתות אבטחה</li>
             <li>דורש יציבות וביטחון בגבהים; לא מומלץ לפחדני גובה או לילדים קטנים</li>
             <li>ניתן לחזור בנוחות לסאס אלמגל ברכבל הכיסאות Furggstalden</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== SAAS-BALEN ===================== -->
+  <div class="region balen">
+    <div class="region-header">
+      <h2>סאס באלן (Saas-Balen)</h2>
+      <p>העיירה הראשונה שפוגשים בכניסה לעמק, ובה מפל המים המרהיב Fellbach</p>
+    </div>
+    <div class="region-body">
+
+      <div class="attraction">
+        <h3>💧 מפל המים <span class="orig">Fellbach</span></h3>
+        <p class="desc">מפל מים מרהיב ועוצמתי שנמצא ממש בתוך העיירה הראשונה שפוגשים בכניסה לעמק.</p>
+        <div class="btn-row">
+          <a class="btn-nav" href="https://maps.app.goo.gl/dgwP5MokUKhr59BN6" target="_blank" rel="noopener">🧭 מיקום המפל ב-Google Maps</a>
+          <button class="show-more-btn" onclick="toggleMore(this)">הצג עוד ▼</button>
+        </div>
+        <div class="more-content">
+          <ul>
+            <li>🥾 הוראות הגעה וטיפ: מומלץ מאוד להחנות את הרכב למטה במקומות המסומנים. מהחניה יש לעלות ברגל עלייה קצרה וחווייתית של כ-5 דקות הליכה בלבד עד למפל עצמו</li>
           </ul>
         </div>
       </div>
